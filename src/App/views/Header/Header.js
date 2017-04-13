@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        Header
+        <i className="fa fa-bars" aria-hidden="true" />
       </header>
     );
   }
