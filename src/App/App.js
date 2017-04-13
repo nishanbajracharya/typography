@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './css/reset.css';
-import './css/App.css';
+import 'app/css/reset.css';
+import 'app/css/App.css';
 
 class App extends Component {
 
@@ -12,7 +12,7 @@ class App extends Component {
       </div>
     );
   }
-  
+
 }
 
 export default App;
