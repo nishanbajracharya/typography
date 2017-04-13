@@ -4,6 +4,7 @@ import './css/reset.css';
 import './css/App.css';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
@@ -11,6 +12,7 @@ class App extends Component {
       </div>
     );
   }
+  
 }
 
 export default App;
