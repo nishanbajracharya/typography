@@ -4,7 +4,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header className="gradient">
         <i className="fa fa-bars" aria-hidden="true" />
       </header>
     );
