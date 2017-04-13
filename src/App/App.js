@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 import 'app/css/reset.css';
-import 'app/css/App.css';
+import 'app/css/layout.css';
+import 'app/css/style.css';
+import 'app/css/media.css';
 
 import Header from 'app/views/Header';
 
@@ -11,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <h1>Hello</h1>
+        <h1>Hello World</h1>
       </div>
     );
   }
