@@ -1,3 +1,25 @@
+html, body, #root {
+  height: 100%;
+}
+
+#root, .App, .container, .sidebar, .main {
+  flex: 1;
+  display: flex;
+}
+
 header {
-  
+  height: 45px;
+  display: flex;
+}
+
+#root, .App {
+  flex-direction: column;
+}
+
+.main {
+  flex: 4;
+}
+
+.container, .main, .sidebar {
+  align-self: stretch;
 }

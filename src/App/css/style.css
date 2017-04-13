@@ -22,8 +22,7 @@ body {
 }
 
 header {
-  flex: 1;
-  display: flex;
+  z-index: 10;
   align-items: center;
   box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
@@ -48,4 +47,13 @@ header h1 {
   color: #333;
   font-weight: 600;
   letter-spacing: 0.15em;
+}
+
+.container {
+  z-index: 5;
+}
+
+.sidebar {
+  background: #ddd;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
 }

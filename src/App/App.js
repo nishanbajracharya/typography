@@ -5,7 +5,10 @@ import 'app/css/layout.css';
 import 'app/css/style.css';
 import 'app/css/media.css';
 
+import Main from 'app/views/Main';
 import Header from 'app/views/Header';
+import SidebarLeft from 'app/views/SidebarLeft';
+import SidebarRight from 'app/views/SidebarRight';
 
 class App extends Component {
 
@@ -13,7 +16,11 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <h1>Hello World</h1>
+        <div className="container">
+          <SidebarLeft />
+          <Main />
+          <SidebarRight />
+        </div>
       </div>
     );
   }
