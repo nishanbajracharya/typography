@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Roboto|Open+Sans');
+
+.f-open-sans * {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.f-roboto * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.f-merriweather * {
+  font-family: 'Merriweather', serif;
+}
+
+.ratio-perfect-fourth h1 {
+  font-size: 2.369em;
+}
+
+.ratio-perfect-fourth h2 {
+  font-size: 1.777em;
+}
+
+.ratio-perfect-fourth h3 {
+  font-size: 1.333em;
+}
+
+.ratio-perfect-fourth h4 {
+  font-size: 1em;
+}
+
+.ratio-perfect-fourth h5 {
+  font-size: 0.75em;
+}
+
+.ratio-perfect-fourth h6 {
+  font-size: 0.563em;
+}

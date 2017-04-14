@@ -6,7 +6,30 @@ class Store extends Component {
     super();
 
     this.state = {
-      showSidebar: false
+      showSidebar: false,
+      activeFont: 2,
+      fonts: [
+        {
+          name: 'Open Sans',
+          class: 'f-open-sans'
+        },
+        {
+          name: 'Roboto',
+          class: 'f-roboto'
+        },
+        {
+          name: 'Merriweather',
+          class: 'f-merriweather'
+        }
+      ],
+      activeRatio: 0,
+      ratios: [
+        {
+          name: 'Perfect Fourth',
+          value: '3/4',
+          class: 'ratio-perfect-fourth'
+        }
+      ]
     };
   }
 

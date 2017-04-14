@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import 'app/css/reset.css';
 import 'app/css/layout.css';
+import 'app/css/font.css';
 import 'app/css/style.css';
 import 'app/css/media.css';
 
