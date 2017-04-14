@@ -52,17 +52,28 @@ header h1 {
   overflow-y: auto;
   transition: .5s;
   background: #333;
+  flex-direction: column;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar .font-selection {
-  padding-top: 2em;
 }
 
 .sidebar .font-selection h2 {
   padding: 1em;
   font-weight: 600;
   border-bottom: 1px solid #555;
+}
+
+.font-selection h2 i {
+  float: right;
+}
+
+.font-selection .font-list {
+  height: 0;
+  transition: .2s;
+  overflow-y: hidden;
+}
+
+.font-selection .font-list.show {
+  height: auto;
 }
 
 .font-selection .font-item {
@@ -90,7 +101,7 @@ header h1 {
 }
 
 .page {
-  padding: 3em;
+  padding: 2em;
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -100,7 +111,6 @@ header h1 {
 }
 
 .page h1:before, .page h1:after, .page h2:before, .page h2:after, .page h3:before, .page h3:after, .page h4:before, .page h4:after, .page h5:before, .page h5:after, .page h6:before, .page h6:after {
-  bottom: 15%;
   color: #999;
   display: none;
   font-size: 12px;

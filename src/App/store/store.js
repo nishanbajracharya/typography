@@ -7,6 +7,7 @@ class Store extends Component {
 
     this.state = {
       showSidebar: false,
+      showFontList: true,
       activeFont: 0,
       fonts: [
         {
@@ -22,12 +23,18 @@ class Store extends Component {
           class: 'f-merriweather'
         }
       ],
+      showRatioList: true,
       activeRatio: 0,
       ratios: [
         {
           name: 'Perfect Fourth',
-          value: '3/4',
+          value: '3:4',
           class: 'ratio-perfect-fourth'
+        },
+        {
+          name: 'Golden Ratio',
+          value: '1:1.618',
+          class: 'ratio-golden-ratio'
         }
       ]
     };

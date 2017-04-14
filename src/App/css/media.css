@@ -29,6 +29,10 @@
     width: 0;
     overflow-x: hidden;
   }
+
+  .page {
+    padding: 3em;
+  }
 }
 
 /* Medium Devices, Desktops */
