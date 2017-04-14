@@ -24,7 +24,7 @@ body {
 header {
   z-index: 10;
   align-items: center;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 header .fa-bars {
@@ -51,9 +51,20 @@ header h1 {
 
 .container {
   z-index: 5;
+  overflow: hidden;
 }
 
 .sidebar {
+  transition: .5s;
   background: #ddd;
-  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+  overflow: auto;
+}
+
+.page {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }

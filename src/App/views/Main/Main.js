@@ -4,7 +4,11 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="main"></div>
+      <div className="main">
+        <div className="page">
+
+        </div>
+      </div>
     );
   }
 

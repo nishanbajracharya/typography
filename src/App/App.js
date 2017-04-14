@@ -7,19 +7,29 @@ import 'app/css/media.css';
 
 import Main from 'app/views/Main';
 import Header from 'app/views/Header';
-import SidebarLeft from 'app/views/SidebarLeft';
-import SidebarRight from 'app/views/SidebarRight';
+import Sidebar from 'app/views/Sidebar';
 
 class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      sidebar: false
+    };
+  }
+
+  sidebarToggle = () => {
+    this.setState({ sidebar: !this.state.sidebar });
+  }
 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header sidebarToggle = { () => this.sidebarToggle() }/>
         <div className="container">
-          <SidebarLeft />
+          <Sidebar show={ this.state.sidebar }/>
           <Main />
-          <SidebarRight />
         </div>
       </div>
     );

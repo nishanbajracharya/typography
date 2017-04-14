@@ -1,12 +1,7 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
-  .main {
-    flex: 1;
-  }
-
-  .sidebar {
-    display: none;
+  .sidebar-display {
+    flex: 1
   }
 }
 
@@ -17,7 +12,18 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .container {
+    flex-direction: row;
+  }
 
+  .main {
+    flex: 9;
+    padding: 3em;
+  }
+
+  .sidebar-display {
+    flex: 3
+  }
 }
 
 /* Medium Devices, Desktops */

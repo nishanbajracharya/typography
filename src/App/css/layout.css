@@ -12,14 +12,23 @@ header {
   display: flex;
 }
 
+.sidebar {
+  flex: 0;
+}
+
 #root, .App {
   flex-direction: column;
 }
 
-.main {
-  flex: 4;
+.container {
+  flex-direction: column;
 }
 
-.container, .main, .sidebar {
+.container, .main, .sidebar, .page {
   align-self: stretch;
+}
+
+.page {
+  flex:1;
+  min-height: 700px;
 }
