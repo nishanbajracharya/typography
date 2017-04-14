@@ -28,6 +28,12 @@ header {
   align-self: stretch;
 }
 
+.sidebar .font-selection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .page {
   flex:1;
   min-height: 700px;

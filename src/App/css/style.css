@@ -9,10 +9,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e7e8eb',GradientType=0 ); /* ie6-9 */
 }
 
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
 body {
   font-size: 16px;
   background: #ccc;
@@ -52,9 +48,40 @@ header h1 {
 }
 
 .sidebar {
+  color: #fff;
   transition: .5s;
   background: #333;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .font-selection {
+  padding-top: 2em;
+}
+
+.sidebar .font-selection h2 {
+  padding: 1em;
+  font-weight: 600;
+  border-bottom: 1px solid #555;
+}
+
+.font-selection .font-item {
+  padding: 0.5em 1em;
+}
+
+.font-selection .font-item:nth-child(even) {
+  background: #444;
+}
+
+.font-selection .font-item.selected-font {
+  background: #49c;
+}
+
+.font-selection .font-item:hover {
+  background: #555;
+}
+
+.font-selection .font-item.selected-font:hover {
+  background: #48b;
 }
 
 .main {
@@ -65,4 +92,69 @@ header h1 {
   padding: 3em;
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
+  position: relative;
+}
+
+.page h1:before, .page h1:after, .page h2:before, .page h2:after, .page h3:before, .page h3:after, .page h4:before, .page h4:after, .page h5:before, .page h5:after, .page h6:before, .page h6:after {
+  bottom: 15%;
+  color: #999;
+  display: none;
+  font-size: 12px;
+  content: '<h1>';
+  position: absolute;
+}
+
+.page h1:before, .page h2:before, .page h3:before, .page h4:before, .page h5:before, .page h6:before {
+  left: -2.5em;
+}
+
+.page h1:after {
+  content: '</h1>';
+}
+
+.page h1:hover:before, .page h1:hover:after, .page h2:hover:before, .page h2:hover:after, .page h3:hover:before, .page h3:hover:after, .page h4:hover:before, .page h4:hover:after, .page h5:hover:before, .page h5:hover:after, .page h6:hover:before, .page h6:hover:after {
+  display: inline;
+}
+
+.page h2:before {
+  content: '<h2>';
+}
+
+.page h2:after {
+  content: '</h2>'
+}
+
+.page h3:before {
+  content: '<h3>';
+}
+
+.page h3:after {
+  content: '</h3>'
+}
+
+.page h4:before {
+  content: '<h4>';
+}
+
+.page h4:after {
+  content: '</h4>'
+}
+
+.page h5:before {
+  content: '<h5>';
+}
+
+.page h5:after {
+  content: '</h5>'
+}
+
+.page h6:before {
+  content: '<h6>';
+}
+
+.page h6:after {
+  content: '</h6>'
 }

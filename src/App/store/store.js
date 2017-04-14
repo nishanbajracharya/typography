@@ -7,7 +7,7 @@ class Store extends Component {
 
     this.state = {
       showSidebar: false,
-      activeFont: 2,
+      activeFont: 0,
       fonts: [
         {
           name: 'Open Sans',
