@@ -49,6 +49,7 @@ header h1 {
 
 .sidebar {
   color: #fff;
+  overflow-y: auto;
   transition: .5s;
   background: #333;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
