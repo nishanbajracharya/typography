@@ -11,25 +11,15 @@ import Sidebar from 'app/views/Sidebar';
 
 class App extends Component {
 
-  constructor() {
-    super();
-
-    this.state = {
-      sidebar: false
-    };
-  }
-
-  sidebarToggle = () => {
-    this.setState({ sidebar: !this.state.sidebar });
-  }
-
   render() {
+    let _store = { state: this.props.state, setState: this.props.setState };
+
     return (
       <div className="App">
-        <Header sidebarToggle = { () => this.sidebarToggle() }/>
+        <Header { ..._store } />
         <div className="container">
-          <Sidebar show={ this.state.sidebar }/>
-          <Main />
+          <Sidebar show={ _store.state.showSidebar } { ..._store } />
+          <Main { ..._store } />
         </div>
       </div>
     );

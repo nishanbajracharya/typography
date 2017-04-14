@@ -1,8 +1,8 @@
-html, body, #root {
+html, body, #root, .store {
   height: 100%;
 }
 
-#root, .App, .container, .sidebar, .main {
+#root, .store, .App, .container, .sidebar, .main {
   flex: 1;
   display: flex;
 }
