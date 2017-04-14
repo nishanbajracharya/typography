@@ -95,12 +95,11 @@ header h1 {
 
 .main {
   overflow: auto;
+  background: #fff;
 }
 
 .page {
   padding: 2em;
-  background: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
@@ -166,4 +165,32 @@ header h1 {
 
 .page h6:after {
   content: '</h6>'
+}
+
+.page p {
+  position: relative;
+}
+
+.page p:before, .page p:after {
+  color: #999;
+  display: none;
+  content: '<p>';
+  font-size: 12px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+}
+.page p:after {
+  content: '</p>';
+}
+
+.page p:before {
+  left: -2em;
+}
+
+.page p:hover:before, .page p:hover:after {
+  display: inline;
+}
+
+.page-right p {
+  text-align: justify;
 }
