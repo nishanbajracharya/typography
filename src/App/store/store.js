@@ -21,11 +21,28 @@ class Store extends Component {
         {
           name: 'Merriweather',
           class: 'f-merriweather'
+        },
+        {
+          name: 'Noto Serif',
+          class: 'f-noto-serif'
+        },
+        {
+          name: 'Lobster Two',
+          class: 'f-lobster-two'
+        },
+        {
+          name: 'Abril Fatface',
+          class: 'f-abril-fatface'
         }
       ],
       showRatioList: true,
       activeRatio: 0,
       ratios: [
+        {
+          name: 'Major Third',
+          value: '4:5',
+          class: 'ratio-major-third'
+        },
         {
           name: 'Perfect Fourth',
           value: '3:4',

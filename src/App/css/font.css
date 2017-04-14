@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Roboto|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto|Open+Sans|Noto+Serif|Lobster+Two|Abril+Fatface');
 
 .f-open-sans * {
   font-family: 'Open Sans', sans-serif;
@@ -12,63 +12,98 @@
   font-family: 'Merriweather', serif;
 }
 
+.f-noto-serif * {
+  font-family: 'Noto Serif', serif;
+}
+
+.f-lobster-two * {
+  font-family: 'Lobster Two', cursive;
+}
+
+.f-abril-fatface * {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.ratio-major-third * {
+  line-height: 1.25em;
+}
+
+.ratio-major-third h1 {
+  font-size: 1.953em;
+}
+
+.ratio-major-third h2 {
+  font-size: 1.563em;
+}
+
+.ratio-major-third h3 {
+  font-size: 1.25em;
+}
+
+.ratio-major-third h4 {
+  font-size: 1em;
+}
+
+.ratio-major-third h5 {
+  font-size: 0.8em;
+}
+
+.ratio-major-third h6 {
+  font-size: 0.64em;
+}
+
+.ratio-perfect-fourth * {
+  line-height: 1.333em;
+}
+
 .ratio-perfect-fourth h1 {
   font-size: 2.369em;
-  line-height: 1.333em;
 }
 
 .ratio-perfect-fourth h2 {
   font-size: 1.777em;
-  line-height: 1.333em;
 }
 
 .ratio-perfect-fourth h3 {
   font-size: 1.333em;
-  line-height: 1.333em;
 }
 
 .ratio-perfect-fourth h4 {
   font-size: 1em;
-  line-height: 1.333em;
 }
 
 .ratio-perfect-fourth h5 {
   font-size: 0.75em;
-  line-height: 1.333em;
 }
 
 .ratio-perfect-fourth h6 {
   font-size: 0.563em;
-  line-height: 1.333em;
+}
+
+.ratio-golden-ratio * {
+  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h1 {
   font-size: 4.236em;
-  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h2 {
-  line-height: 26px;
   font-size: 2.618em;
-  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h3 {
   font-size: 1.618em;
-  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h4 {
   font-size: 1em;
-  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h5 {
   font-size: 0.618em;
-  line-height: 1.618em;
 }
 
 .ratio-golden-ratio h6 {
   font-size: 0.382em;
-  line-height: 1.618em;
 }

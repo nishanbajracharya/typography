@@ -49,8 +49,8 @@ header h1 {
 
 .sidebar {
   color: #fff;
+  transition: .2s;
   overflow-y: auto;
-  transition: .5s;
   background: #333;
   flex-direction: column;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
@@ -59,6 +59,7 @@ header h1 {
 .sidebar .font-selection h2 {
   padding: 1em;
   font-weight: 600;
+  border-top: 1px solid #555;
   border-bottom: 1px solid #555;
 }
 
@@ -68,7 +69,6 @@ header h1 {
 
 .font-selection .font-list {
   height: 0;
-  transition: .2s;
   overflow-y: hidden;
 }
 
@@ -77,11 +77,8 @@ header h1 {
 }
 
 .font-selection .font-item {
+  cursor: default;
   padding: 0.5em 1em;
-}
-
-.font-selection .font-item:nth-child(even) {
-  background: #444;
 }
 
 .font-selection .font-item.selected-font {
@@ -116,6 +113,7 @@ header h1 {
   font-size: 12px;
   content: '<h1>';
   position: absolute;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page h1:before, .page h2:before, .page h3:before, .page h4:before, .page h5:before, .page h6:before {
